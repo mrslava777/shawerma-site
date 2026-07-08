@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ШАУРМА ПРЕМИУМ — Искусство Вкуса</title>
+    <meta name="description" content="Премиальная шаурма и донер. Свежие продукты, мясо на углях, быстрая доставка.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-inner"></div>
+            <div class="loader-text">ШАУРМА ПРЕМИУМ</div>
+            <div class="loader-subtext">Загрузка вкуса...</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-icon">🔥</span>
+                <span class="logo-text">ШАУРМА<span class="logo-accent">ПРЕМИУМ</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Главная</a></li>
+                <li><a href="#popular" class="nav-link">Популярное</a></li>
+                <li><a href="#why-us" class="nav-link">Почему мы</a></li>
+                <li><a href="#menu" class="nav-link">Меню</a></li>
+                <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                <li><a href="#promo" class="nav-link">Акции</a></li>
+                <li><a href="#contacts" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <a href="tel:+79991234567" class="phone-btn">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-links">
+                <li><a href="#hero" class="mobile-nav-link">Главная</a></li>
+                <li><a href="#popular" class="mobile-nav-link">Популярное</a></li>
+                <li><a href="#why-us" class="mobile-nav-link">Почему мы</a></li>
+                <li><a href="#menu" class="mobile-nav-link">Меню</a></li>
+                <li><a href="#gallery" class="mobile-nav-link">Галерея</a></li>
+                <li><a href="#reviews" class="mobile-nav-link">Отзывы</a></li>
+                <li><a href="#promo" class="mobile-nav-link">Акции</a></li>
+                <li><a href="#contacts" class="mobile-nav-link">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <a href="tel:+79991234567" class="mobile-phone">+7 (999) 123-45-67</a>
+                <div class="mobile-socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-bg-gradient"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge" data-aos="fade-down">
+                    <span class="badge-icon">⭐</span>
+                    <span>№1 в городе по отзывам</span>
+                </div>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    <span class="title-line">Искусство</span>
+                    <span class="title-line accent">Настоящей</span>
+                    <span class="title-line">Шаурмы</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    Свежайшие ингредиенты, сочное мясо на открытом огне, 
+                    секретные соусы и любовь к каждой детали
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#menu" class="btn btn-primary btn-glow">
+                        <span class="btn-text">Заказать сейчас</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="#menu" class="btn btn-secondary">
+                        <span class="btn-text">Смотреть меню</span>
+                        <span class="btn-icon"><i class="fas fa-utensils"></i></span>
+                    </a>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15000">0</div>
+                        <div class="stat-label">Довольных клиентов</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Видов шаурмы</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Минут доставка</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-glow"></div>
+                    <img src="https://images.unsplash.com/photo-1561651823-34a0658ebc9d?w=800&h=800&fit=crop" alt="Премиальная шаурма" class="hero-img">
+                    <div class="floating-elements">
+                        <div class="float-item float-1">🌶️</div>
+                        <div class="float-item float-2">🥩</div>
+                        <div class="float-item float-3">🧅</div>
+                        <div class="float-item float-4">🍅</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="var(--bg-dark)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Popular Dishes Section -->
+    <section class="section popular" id="popular">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Топ продаж</span>
+            <h2 class="section-title">Популярные <span class="accent">Блюда</span></h2>
+            <p class="section-subtitle">Выбор тысяч довольных клиентов</p>
+        </div>
+        <div class="popular-grid">
+            <div class="dish-card hit" data-aos="fade-up" data-aos-delay="0">
+                <div class="dish-badge">ХИТ</div>
+                <div class="dish-image">
+                    <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=400&fit=crop" alt="Классическая шаурма">
+                    <div class="dish-overlay">
+                        <button class="dish-quick-add">Быстрый заказ</button>
+                    </div>
+                </div>
+                <div class="dish-info">
+                    <div class="dish-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span>
+                    </div>
+                    <h3 class="dish-name">Классическая Шаурма</h3>
+                    <p class="dish-desc">Сочная курица, свежие овощи, фирменный соус в тонком лаваше</p>
+                    <div class="dish-footer">
+                        <span class="dish-price">290 ₽</span>
+                        <button class="btn-add">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card hit" data-aos="fade-up" data-aos-delay="100">
+                <div class="dish-badge">ХИТ</div>
+                <div class="dish-image">
+                    <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400&h=400&fit=crop" alt="Донер Премиум">
+                    <div class="dish-overlay">
+                        <button class="dish-quick-add">Быстрый заказ</button>
+                    </div>
+                </div>
+                <div class="dish-info">
+                    <div class="dish-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.8</span>
+                    </div>
+                    <h3 class="dish-name">Донер Премиум</h3>
+                    <p class="dish-desc">Говядина на вертеле, пита, хумус, тахини и свежий салат</p>
+                    <div class="dish-footer">
+                        <span class="dish-price">390 ₽</span>
+                        <button class="btn-add">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="dish-image">
+                    <img src="https://images.unsplash.com/photo-1547496502-ffa4769d6d8d?w=400&h=400&fit=crop" alt="Шаурма XL">
+                    <div class="dish-overlay">
+                        <button class="dish-quick-add">Быстрый заказ</button>
+                    </div>
+                </div>
+                <div class="dish-info">
+                    <div class="dish-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                    <h3 class="dish-name">Шаурма XL</h3>
+                    <p class="dish-desc">Двойная порция мяса, максимум начинки, для настоящих гурманов</p>
+                    <div class="dish-footer">
+                        <span class="dish-price">450 ₽</span>
+                        <button class="btn-add">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card new" data-aos="fade-up" data-aos-delay="300">
+                <div class="dish-badge new">NEW</div>
+                <div class="dish-image">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=400&fit=crop" alt="Острая Шаурма">
+                    <div class="dish-overlay">
+                        <button class="dish-quick-add">Быстрый заказ</button>
+                    </div>
+                </div>
+                <div class="dish-info">
+                    <div class="dish-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span>
+                    </div>
+                    <h3 class="dish-name">Острая Шаурма</h3>
+                    <p class="dish-desc">С перцем халапеньо, острым соусом и маринованным луком</p>
+                    <div class="dish-footer">
+                        <span class="dish-price">320 ₽</span>
+                        <button class="btn-add">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-us" id="why-us">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Наши преимущества</span>
+            <h2 class="section-title">Почему <span class="accent">Выбирают</span> Нас</h2>
+            <p class="section-subtitle">Каждая деталь продумана для вашего удовольствия</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="feature-glow"></div>
+                </div>
+                <h3 class="feature-title">Свежие Продукты</h3>
+                <p class="feature-desc">Ежедневная доставка овощей и мяса от проверенных поставщиков. Никаких заморозок и полуфабрикатов</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="feature-glow"></div>
+                </div>
+                <h3 class="feature-title">Мясо на Углях</h3>
+                <p class="feature-desc">Настоящий вертел с древесным углем. Аромат дыма и идеальная прожарка каждого кусочка</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="feature-glow"></div>
+                </div>
+                <h3 class="feature-title">Быстрая Доставка</h3>
+                <p class="feature-desc">Доставим за 15-25 минут. Горячая шаурма в специальной термоупаковке сохраняет свежесть</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">
+                        <i class="fas fa-weight-hanging"></i>
+                    </div>
+                    <div class="feature-glow"></div>
+                </div>
+                <h3 class="feature-title">Большие Порции</h3>
+                <p class="feature-desc">Щедрые порции по честной цене. Наши XL-шаурмы весят от 450 грамм — настоящий обед для гурмана</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="feature-glow"></div>
+                </div>
+                <h3 class="feature-title">Натуральные Ингредиенты</h3>
+                <p class="feature-desc">Без усилителей вкуса, красителей и консервантов. Только натуральные специи и свежие травы</p>
+            </div>
+
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="feature-glow"></div>
+                </div>
+                <h3 class="feature-title">Быстрое Приготовление</h3>
+                <p class="feature-desc">Ваш заказ готовится за 3-5 минут. Опытные повара и оптимизированный процесс</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Наше меню</span>
+            <h2 class="section-title">Меню <span class="accent">Шаурмы</span></h2>
+            <p class="section-subtitle">Выберите свой идеальный вкус</p>
+        </div>
+
+        <div class="menu-filters" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="shawarma">Шаурма</button>
+            <button class="filter-btn" data-filter="doner">Донер</button>
+            <button class="filter-btn" data-filter="sides">Гарниры</button>
+            <button class="filter-btn" data-filter="drinks">Напитки</button>
+            <button class="filter-btn" data-filter="sauces">Соусы</button>
+            <button class="filter-btn" data-filter="combo">Комбо</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+            <!-- Shawarma items -->
+            <div class="menu-card" data-category="shawarma" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1561651823-34a0658ebc9d?w=400&h=300&fit=crop" alt="Классическая">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Классическая</h3>
+                    <p>Курица, овощи, соус</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">290 ₽</span>
+                        <span class="menu-weight">350 г</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="shawarma" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=300&fit=crop" alt="Сырная">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Сырная</h3>
+                    <p>Курица, сыр моцарелла, соус</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">340 ₽</span>
+                        <span class="menu-weight">380 г</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="shawarma" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1547496502-ffa4769d6d8d?w=400&h=300&fit=crop" alt="XL Мясная">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>XL Мясная</h3>
+                    <p>Двойная порция мяса</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">450 ₽</span>
+                        <span class="menu-weight">500 г</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="shawarma" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" alt="Острая">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Острая</h3>
+                    <p>С халапеньо и острым соусом</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">320 ₽</span>
+                        <span class="menu-weight">360 г</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doner items -->
+            <div class="menu-card" data-category="doner" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400&h=300&fit=crop" alt="Донер Классик">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Донер Классик</h3>
+                    <p>Говядина, пита, хумус</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">390 ₽</span>
+                        <span class="menu-weight">400 г</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="doner" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&h=300&fit=crop" alt="Донер Премиум">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Донер Премиум</h3>
+                    <p>Говядина, баранина, фалафель</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">490 ₽</span>
+                        <span class="menu-weight">450 г</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sides -->
+            <div class="menu-card" data-category="sides" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=400&h=300&fit=crop" alt="Картофель Фри">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Картофель Фри</h3>
+                    <p>Хрустящий с солью</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">120 ₽</span>
+                        <span class="menu-weight">150 г</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="sides" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=400&h=300&fit=crop" alt="Картофель по-деревенски">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Картофель по-деревенски</h3>
+                    <p>С чесноком и зеленью</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">150 ₽</span>
+                        <span class="menu-weight">200 г</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-card" data-category="drinks" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400&h=300&fit=crop" alt="Айран">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Айран</h3>
+                    <p>Домашний, 0.5л</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">80 ₽</span>
+                        <span class="menu-weight">500 мл</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="drinks" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop" alt="Лимонад">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Лимонад Домашний</h3>
+                    <p>Мята, лимон, имбирь</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">150 ₽</span>
+                        <span class="menu-weight">500 мл</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sauces -->
+            <div class="menu-card" data-category="sauces" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1472476443507-c7a0d4f0f0c8?w=400&h=300&fit=crop" alt="Чесночный">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Соус Чесночный</h3>
+                    <p>Фирменный рецепт</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">40 ₽</span>
+                        <span class="menu-weight">50 г</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="sauces" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop" alt="Томатный">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Соус Томатный</h3>
+                    <p>Острый, на выбор</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">40 ₽</span>
+                        <span class="menu-weight">50 г</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combo -->
+            <div class="menu-card combo-card" data-category="combo" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=300&fit=crop" alt="Комбо №1">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="combo-badge">-15%</div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Комбо №1</h3>
+                    <p>Шаурма + Картофель + Напиток</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price"><del>560</del> 480 ₽</span>
+                        <span class="menu-weight">Комбо</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card combo-card" data-category="combo" data-aos="fade-up">
+                <div class="menu-card-image">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" alt="Комбо №2">
+                    <div class="menu-card-overlay">
+                        <button class="menu-add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="combo-badge">-20%</div>
+                </div>
+                <div class="menu-card-info">
+                    <h3>Комбо №2</h3>
+                    <p>2 Шаурмы + 2 Напитка</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price"><del>880</del> 700 ₽</span>
+                        <span class="menu-weight">Комбо</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Галерея</span>
+            <h2 class="section-title">Наше <span class="accent">Творчество</span></h2>
+            <p class="section-subtitle">Каждое блюдо — произведение искусства</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item large" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1561651823-34a0658ebc9d?w=800&h=600&fit=crop" alt="Шаурма процесс">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <h3>Искусство Приготовления</h3>
+                        <p>Каждый этап под контролем шеф-повара</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=400&fit=crop" alt="Свежие ингредиенты">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <h3>Свежие Ингредиенты</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1547496502-ffa4769d6d8d?w=400&h=400&fit=crop" alt="Мясо на углях">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <h3>Мясо на Углях</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400&h=400&fit=crop" alt="Донер">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <h3>Донер Премиум</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=400&fit=crop" alt="Соусы">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <h3>Фирменные Соусы</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item wide" data-aos="fade-up" data-aos-delay="500">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&h=400&fit=crop" alt="Интерьер">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <h3>Уютная Атмосфера</h3>
+                        <p>Приходите к нам в гости</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Отзывы</span>
+            <h2 class="section-title">Что <span class="accent">Говорят</span> Клиенты</h2>
+            <p class="section-subtitle">Более 15 000 довольных гостей</p>
+        </div>
+        <div class="reviews-slider" id="reviewsSlider">
+            <div class="reviews-track">
+                <div class="review-card" data-aos="fade-up">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Лучшая шаурма в городе! Пробовал десятки мест, но здесь настоящий вкус. Мясо сочное, овощи хрустящие, соус просто божественный. Заказываю каждую неделю!"</p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Александр" class="review-avatar">
+                        <div class="review-info">
+                            <h4>Александр М.</h4>
+                            <span>Постоянный клиент</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Доставка молниеносная! Заказала на работу, привезли за 12 минут. Шаурма была горячей, как будто только с плиты. XL порция — это отдельная любовь!"</p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Мария" class="review-avatar">
+                        <div class="review-info">
+                            <h4>Мария К.</h4>
+                            <span>Дизайнер</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"Острая шаурма — это огонь! Для любителей остроты — must try. При этом не переборщили, всё в меру. Качество мяса на высоте, чувствуется, что свежее."</p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" alt="Дмитрий" class="review-avatar">
+                        <div class="review-info">
+                            <h4>Дмитрий В.</h4>
+                            <span>Фотограф</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Беру комбо на семью каждую пятницу. Экономия + всем нравится. Дети обожают сырную шаурму, а я — донер премиум. Идеальное сочетание цены и качества!"</p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Елена" class="review-avatar">
+                        <div class="review-info">
+                            <h4>Елена П.</h4>
+                            <span>Мама двоих детей</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-nav">
+                <button class="review-prev" id="reviewPrev"><i class="fas fa-chevron-left"></i></button>
+                <div class="reviews-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="review-next" id="reviewNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section class="section promo" id="promo">
+        <div class="promo-container" data-aos="zoom-in">
+            <div class="promo-bg">
+                <div class="promo-glow"></div>
+            </div>
+            <div class="promo-content">
+                <div class="promo-badge">🔥 Акция месяца</div>
+                <h2 class="promo-title">Скидка 20% на всё меню!</h2>
+                <p class="promo-text">Закажите через приложение и получите скидку 20% на первый заказ. Акция действует ограниченное время!</p>
+                <div class="promo-timer" id="promoTimer">
+                    <div class="timer-item">
+                        <span class="timer-number" id="timerDays">03</span>
+                        <span class="timer-label">дня</span>
+                    </div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="timerHours">14</span>
+                        <span class="timer-label">часов</span>
+                    </div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="timerMinutes">35</span>
+                        <span class="timer-label">минут</span>
+                    </div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="timerSeconds">42</span>
+                        <span class="timer-label">секунд</span>
+                    </div>
+                </div>
+                <a href="#menu" class="btn btn-primary btn-glow btn-large">
+                    <span class="btn-text">Заказать со скидкой</span>
+                    <span class="btn-icon"><i class="fas fa-percent"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">FAQ</span>
+            <h2 class="section-title">Частые <span class="accent">Вопросы</span></h2>
+            <p class="section-subtitle">Ответы на популярные вопросы</p>
+        </div>
+        <div class="faq-list" data-aos="fade-up">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Как быстро осуществляется доставка?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Среднее время доставки составляет 15-25 минут в зависимости от района. Мы используем специальную термоупаковку, чтобы ваша шаурма оставалась горячей и свежей.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Есть ли у вас вегетарианские блюда?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Да! У нас есть вегетарианская шаурма с фалафелем, овощной донер и разнообразные салаты. Все блюда готовятся на отдельном оборудовании.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Можно ли заказать доставку на конкретное время?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Конечно! При оформлении заказа вы можете выбрать удобное время доставки. Мы доставим ваш заказ точно в назначенный час.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Какие способы оплаты доступны?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Мы принимаем оплату наличными, картами Visa/Mastercard, а также через Apple Pay, Google Pay и СБП. Онлайн-оплата доступна при заказе через приложение.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Есть ли у вас программа лояльности?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Да! При регистрации в приложении вы получаете карту лояльности. За каждый заказ начисляются баллы, которые можно обменять на бесплатные блюда и скидки.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section class="section contacts" id="contacts">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Контакты</span>
+            <h2 class="section-title">Приходите к <span class="accent">Нам</span></h2>
+            <p class="section-subtitle">Мы всегда рады видеть вас</p>
+        </div>
+        <div class="contacts-grid">
+            <div class="contacts-info" data-aos="fade-right">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Адрес</h3>
+                        <p>г. Москва, ул. Гурманов, 42</p>
+                        <p>ТЦ "Вкусная Плаза", 1 этаж</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Телефон</h3>
+                        <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                        <p><a href="tel:+79991234568">+7 (999) 123-45-68</a></p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>График работы</h3>
+                        <p>Пн-Пт: 10:00 — 23:00</p>
+                        <p>Сб-Вс: 09:00 — 24:00</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p><a href="mailto:hello@shawarmapremium.ru">hello@shawarmapremium.ru</a></p>
+                    </div>
+                </div>
+                <div class="contact-socials">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+            <div class="contacts-map" data-aos="fade-left">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.0!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDIuMyJF!5e0!3m2!1sru!2sru!4v1" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; border-radius: 24px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="map-overlay">
+                        <div class="map-pin">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Мы здесь!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo">
+                        <span class="logo-icon">🔥</span>
+                        <span class="logo-text">ШАУРМА<span class="logo-accent">ПРЕМИУМ</span></span>
+                    </a>
+                    <p class="footer-desc">Искусство настоящей шаурмы. Свежие продукты, сочное мясо, фирменные соусы и любовь к каждой детали.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Меню</h4>
+                    <ul>
+                        <li><a href="#menu">Шаурма</a></li>
+                        <li><a href="#menu">Донер</a></li>
+                        <li><a href="#menu">Гарниры</a></li>
+                        <li><a href="#menu">Напитки</a></li>
+                        <li><a href="#menu">Комбо</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#delivery">Доставка</a></li>
+                        <li><a href="#promo">Акции</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +7 (999) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> hello@shawarmapremium.ru</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Гурманов, 42</li>
+                        <li><i class="fas fa-clock"></i> Ежедневно 10:00-23:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Шаурма Премиум. Все права защищены.</p>
+            <p>Сделано с ❤️ и аппетитом</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-overlay" id="cartOverlay"></div>
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Ваша корзина</h3>
+                <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <div class="cart-empty">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>Ваша корзина пуста</p>
+                    <span>Добавьте блюда из меню</span>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Итого:</span>
+                    <span class="cart-total-price" id="cartTotal">0 ₽</span>
+                </div>
+                <button class="btn btn-primary btn-glow btn-full" id="checkoutBtn">
+                    <span class="btn-text">Оформить заказ</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Добавлено в корзину</span>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
